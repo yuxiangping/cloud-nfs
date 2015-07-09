@@ -1,0 +1,36 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>com.cache</groupId>
+	<artifactId>cloud-cache</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<name>cloud-cache</name>
+	<description>cloud file cache</description>
+
+	<dependencies>
+		<dependency>
+		    <groupId>com.eason.utils</groupId>
+  			<artifactId>utils</artifactId>
+  			<version>0.0.1-SNAPSHOT</version>
+		</dependency>
+	    
+		<!-- xml -->
+		<dependency>
+	  		<groupId>dom4j</groupId>
+	  		<artifactId>dom4j</artifactId>
+	  		<version>1.6.1</version>
+		</dependency>
+
+		<!-- log -->
+		<dependency>
+			<groupId>ch.qos.logback</groupId>
+			<artifactId>logback-classic</artifactId>
+			<version>1.1.2</version>
+		</dependency>
+		<dependency>
+			<groupId>org.slf4j</groupId>
+			<artifactId>slf4j-api</artifactId>
+			<version>1.7.7</version>
+		</dependency>
+	</dependencies>
+</project>

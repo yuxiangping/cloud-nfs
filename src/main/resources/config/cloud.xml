@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<nodes>
+	<node>
+		<name>CLOUD-1</name>
+		<host>192.168.1.100</host>
+		<port>22</port>
+		<path>/data/cloud</path>
+		<size unit="GB">10</size>
+	</node>
+	<node>
+		<name>CLOUD-2</name>
+		<host>192.168.1.101</host>
+		<port>22</port>
+		<path>/data/cloud</path>
+		<size unit="TB">2</size>
+	</node>
+	<node>
+		<name>CLOUD-3</name>
+		<host>192.168.1.100</host>
+		<port>22</port>
+		<path>/data/cloud2</path>
+		<size>800</size>
+	</node>   
+</nodes>
