@@ -56,7 +56,7 @@ public class CacheCloud {
     return instance;
   }
 
-  public Node getCloudNodeInfo() {
+  public Node getCloudNode() {
     Node node = getNodeByRate();
     return node;
   }
@@ -119,8 +119,7 @@ public class CacheCloud {
     }
 
     if (current <= 0) {
-      logger.error("Clusters cache node hard disk space is full.");
-      throw new RuntimeException("Clusters cache node hard disk space is full.");
+      throw new RuntimeException("no available cache node.");
     }
     
     int rand = random.nextInt(current);

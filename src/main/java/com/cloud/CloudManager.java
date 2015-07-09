@@ -13,8 +13,8 @@ public class CloudManager {
   /**
    * 获取节点路径
    */
-  public static Node getNodeInfo() {
-    return CacheCloud.getInstance().getCloudNodeInfo();
+  public static Node getNode() {
+    return CacheCloud.getInstance().getCloudNode();
   }
 
   /**
