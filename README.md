@@ -13,7 +13,7 @@ CloudNFS仅作为文件存储时的寻址负载工具，为每次的存储请求
 Maven
 ```xml
 <dependency>
-	<groupId>com.github.yuxiangping</groupId>
+    <groupId>com.github.yuxiangping</groupId>
     <artifactId>cloud-nfs</artifactId>
     <version>1.0.0.RELEASE</version>
 </dependency>
