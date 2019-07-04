@@ -6,9 +6,25 @@ CloudNFS仅作为文件存储时的寻址负载工具，为每次的存储请求
 
 ---
 
-# cloud-nfs的使用
+#### 快速开始
 
-在config/cloud.xml中配置分配的存储节点
+1. 依赖引入
+
+Maven
+```xml
+<dependency>
+	<groupId>com.github.yuxiangping</groupId>
+    <artifactId>cloud-nfs</artifactId>
+    <version>1.0.0.RELEASE</version>
+</dependency>
+```
+
+Gradle
+```
+compile group: 'com.github.yuxiangping', name: 'cloud-nfs', version: '1.0.0.RELEASE'
+```
+
+2. 在config/cloud.xml中配置分配的存储节点
 
 ```xml
 <nodes>
@@ -36,7 +52,9 @@ CloudNFS仅作为文件存储时的寻址负载工具，为每次的存储请求
 </nodes>
 ```
 
-获取可用节点代码
+3. 获取可用节点
+
 ```java
-Node node = CloudManager.getNode();
+CloudNFS nfs = new CloudNFS(new StatisticHD());
+Node node = nfs.getCloudNode();
 ```
